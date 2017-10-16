@@ -1,2 +1,2 @@
-# Curso_Malaga_2
-Curso de Angular en Indra (Malaga)
+# Curso Málaga 2
+Curso de Angular en Indra (Málaga)
