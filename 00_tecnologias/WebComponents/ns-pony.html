@@ -1,0 +1,28 @@
+<template id="pony-tpl">
+	<style>
+		h1 { color: orange; }
+	</style>
+	<h1>Hola componente</h1>
+</template>
+
+<script>
+
+    // let's extend HTMLElement
+    let PonyComponentProto = Object.create(HTMLElement.prototype);
+
+    // add some template using a lifecycle and the template tag
+    PonyComponentProto.createdCallback = function() {
+        let oImport = document.querySelector('link[rel="import"]').import;
+        //console.log(x.querySelector("template"))
+        const template = oImport.querySelector("template");
+        let clone = document.importNode(template.content, true);
+        let shadow = this.createShadowRoot();
+        this.createShadowRoot().appendChild(clone);
+    };
+    
+    // new element
+    let PonyComponent = document.registerElement('ns-pony', {prototype: PonyComponentProto});
+    // insert in current body
+    document.body.appendChild(new PonyComponent()); 
+</script>
+
