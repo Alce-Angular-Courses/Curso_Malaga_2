@@ -1,0 +1,11 @@
+<div>
+  <p>
+    <label for="nombre">Dime tu nombre</label>
+    <input type="text" id="nombre" name="name" [(ngModel)]="sNombre">  
+  </p> 
+  <button (click)="btnBorrar()">Borrar</button>
+  <h2>Resultados usando [()]</h2>
+  <p>Hola {{sNombre.toUpperCase()}}</p>
+  <p>{{12 / 2}}</p>
+</div>
+

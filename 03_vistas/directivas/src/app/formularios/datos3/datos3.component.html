@@ -1,0 +1,10 @@
+<div>
+  <p>
+    <label for="nombre">Dime tu nombre</label>
+    <input type="text" id="nombre" name="name" #inputNombre>  
+  </p> 
+  <button (click)="btnBorrar()">Borrar</button>
+  <h2>Resultados usando #</h2>
+  <p>Hola {{inputNombre.value}}</p>
+</div>
+
