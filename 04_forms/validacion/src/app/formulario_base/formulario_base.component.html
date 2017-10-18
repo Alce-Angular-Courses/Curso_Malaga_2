@@ -1,0 +1,33 @@
+<form name="myform" (ngSubmit)="enviar()">
+
+  <p>
+    <!--Etiqueta / Campo "Mombre"-->						
+    <label for="firstname">Nombre</label>
+    <input type="text" id="firstname" name="firstname"
+      [(ngModel)]="user.firstname">
+  </p>
+				
+  <p>
+    <!--Etiqueta / Campo "Apellidos"-->
+    <label for="lastname">Apellidos</label>
+    <input type="text" id="lastname" name="lastname"
+      [(ngModel)]="user.lastname">
+  </p>
+
+  <p>
+    <!--Etiqueta / Campo "Telefono"-->
+    <label for="phoneNumber">Teléfono</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" 
+      [(ngModel)]="user.phoneNumber"> 
+  </p>						
+
+  <!--Botones "Enviar" y "Borrar"-->
+  <p>
+    <label for=""></label>
+    <input type="submit" id="enviar" name="enviar" value="Enviar">
+    <label for=""></label>			
+    <input type="button" id="borrar" name="borrar" 
+    value="Borrar" (click)="borrar()">
+  </p>						
+  
+</form>

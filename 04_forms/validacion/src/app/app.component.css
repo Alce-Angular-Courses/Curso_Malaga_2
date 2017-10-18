@@ -1,0 +1,51 @@
+header {
+	width: 45%;
+	margin: 2em auto 4em auto;
+	padding: 2em 1em;
+	background-color: maroon;
+	color: white;
+	color: beige;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px silver;
+	}
+ footer {
+ 	margin-top:  2em;
+ 	padding-top: 1em;
+ 	border-top: solid 1px silver;
+ 	color: maroon;
+ 	}
+ 	footer address, footer p {
+ 		margin-top: 0.3em; 
+ 	}
+ header, footer {
+ 	text-align: center;
+ 	}
+
+article, section{
+	width: 60%;
+	margin: 1em auto;
+}		
+
+form {
+	width: 100%;
+	margin: 1em;
+	padding: 1em 0em;
+	background-color: beige;
+	overflow: hidden;
+	}				
+
+form label {
+	width: 40%;
+	margin: 1em auto;
+	display:inline-block;
+	text-align: right;
+	padding: 0 2em;
+}
+
+form input {
+	display: inline-block;
+	width: 40%;
+}
+p {
+	margin: 2em;
+}		
