@@ -1,0 +1,25 @@
+<div class="container">
+  <p [ngStyle]="estilos">
+    <label for="autor">Autor</label>
+    <input type="text" id="autor" name="autor" [(ngModel)]="sIdea">  
+  </p> 
+  <button (click)="btnInsert()">Añadir</button>
+  <p>
+    Precio: {{precio | currency}}
+  </p>
+  <p>
+    Estilos : {{estilos | json}}
+  </p>
+
+  <!--
+  <div [hidden]="aIdeas.length ? false : true">
+  -->
+  <div *ngIf="aIdeas.length">
+    <h2>Lista de ideas</h2>
+    <ul>
+      <li *ngFor="let idea of aIdeas; let i = index">{{idea}} ({{i+1}})</li>
+    </ul>
+  </div>
+
+</div>
+
