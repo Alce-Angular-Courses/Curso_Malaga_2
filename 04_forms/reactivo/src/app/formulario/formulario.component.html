@@ -1,0 +1,66 @@
+<form [formGroup]="formLibros" (ngSubmit)="enviarFormLibros()">
+
+    <label for="titulo">Titulo</label>
+    <input type="text" id="titulo" formControlName="titulo">
+
+    <label for="autor">Autor</label>
+    <input type="text" id="autor" formControlName="autor">
+
+    <label for="editorial">Editorial</label>
+    <input type="text" id="editorial" formControlName="editorial">
+
+    <label for="fecha">Fecha (Año)</label>
+    <input type="text" id="fecha" formControlName="fecha">
+
+    <label></label>
+    <button type="submit" [disabled]="!formLibros.valid">Enviar</button>
+
+</form>
+
+<p>
+  {{ formLibros.value | json}}
+</p>
+<p>
+    {{ formLibros.valid }}
+</p>
+<!--
+
+<h2>Selecciona una Impresora</h2>
+<div *ngFor="let impresora of aImpresoras">
+    <input type="radio" 
+        name ="printer" [(ngModel)]="impresoraSeleccionada" [value]="impresora" 
+        (change)="mostrarFinal=true">
+    <label>{{impresora}}</label>
+</div>
+
+  
+<h2>Seleción de opciones</h2>
+<p>
+    <input id="print" type="checkbox" [(ngModel)]="print" (change)="mostrarFinal=true; avisarPrint()">
+    <label for="print">Imprimir resultado</label><br>
+    
+    <input id="tono" type="checkbox" [(ngModel)]="isClaro" (change)="mostrarFinal=true"> 
+    <label for="tono">Tono claro</label>			
+</p>
+
+
+<p>
+    <label for="select">Provincia </label>
+    <select id="select" [(ngModel)]="provinciaSeleccionada" (ngModelChange)="avisarProvincia()"> 
+        <option *ngFor="let provincia of aProvincias"
+            [ngValue]="provincia">
+            {{provincia.nombre}}
+        </option>
+    </select>
+</p>	
+<div *ngIf="mostrarFinal">
+    <h2>Resultado</h2>
+    <ul>
+        <li>Impresora seleccionada: {{impresoraSeleccionada}}</li>
+        <li>Opción print seleccionada: {{print}}</li>
+        <li>Opción claro seleccionada: {{isClaro}}</li>
+        <li>Provincia elegida: {{provinciaSeleccionada.nombre}}</li>
+    </ul>    
+</div>	
+
+-->
