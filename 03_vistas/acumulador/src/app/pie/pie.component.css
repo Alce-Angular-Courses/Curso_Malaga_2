@@ -1,0 +1,11 @@
+ footer {
+	text-align: center;
+ 	margin-top:  2em;
+ 	padding-top: 1em;
+ 	border-top: solid 1px silver;
+ 	color: maroon;
+    /*color: silver*/
+ 	}
+ 	footer address, footer p {
+ 		margin-top: 0.3em; 
+ 	}

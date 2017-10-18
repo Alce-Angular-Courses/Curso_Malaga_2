@@ -1,0 +1,29 @@
+<article>
+    
+        <!-- clases definidas como strings-->
+        <h2 [class]="tamTitular">Acumulador</h2>
+        <label>Elije en tamaño de letra del titular</label>
+    
+        <!--Seleccion dinámica del valor del string que define la clase anterior-->
+        <select [(ngModel)]="tamTitular">
+            <option value="titularpeq">Pequeño</option>
+            <option value="titulargran">Grande</option>
+        </select>
+    
+        <!-- clases definidas como un array de strings-->
+        <h2 [ngClass]="aClases">Control de operación:</h2>
+        <form name="formulario">
+            <label for="fNombre" id="lblNombre">Incremento</label>
+            <input type="text" id="fvalor" name="fvalor" size="4" [(ngModel)]="incremento">
+    
+            <label></label>
+            <input type="button"  id="btnMas" value="+"  (click)="sumar()">	
+            <label></label>
+            <input type="button"  id="btnMenos" value="-" (click)="restar()">
+    
+        </form>
+        
+        <h2>Totales:</h2>
+        <p>En el acumulador llevamos <b 
+        [ngClass]="{ positivo : total >= 0,  negativo : total < 0}">{{ total }}</b></p>
+    </article>

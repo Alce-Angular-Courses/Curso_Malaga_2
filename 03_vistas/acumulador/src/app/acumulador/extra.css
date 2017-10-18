@@ -1,0 +1,21 @@
+.negativo {
+	color: red;
+}
+.positivo {
+	color: #33f;
+}
+.titularpeq{
+	font-size: 1em;
+}
+.titulargran{
+	font-size: 3em;
+}
+.uno{
+	background-color: #666;
+}
+.dos{
+	color: #fff;
+}
+.tres{
+	font-size: 2em;
+}
