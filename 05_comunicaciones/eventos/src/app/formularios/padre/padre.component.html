@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>Componente padre</h2>
+
+  <input type="text" placeholder="Escribe un nombre" [(ngModel)]="nombre">
+  <app-hijo [nombre]="nombre" (evento)="btnEvento($event)" ></app-hijo>
+  <p>El hijo se llama {{nombre}}</p>
+</div>

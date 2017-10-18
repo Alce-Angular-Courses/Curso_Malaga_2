@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Componente hijo</h2>
+  <p>Me llamo {{nombre}}</p>
+  <button (click)="contestar($event)">No me gusta {{nombre}}</button>
+  <input type="text" placeholder="Nombre que te gusta" 
+      [(ngModel)] = "nombrePrefe">
+</div>
+
