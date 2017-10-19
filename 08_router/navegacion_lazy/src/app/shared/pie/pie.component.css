@@ -1,0 +1,13 @@
+footer {
+    position: fixed;
+    bottom : 0;
+    width: 100%;
+    border-top:  1px papayawhip solid;
+    padding: 1em;
+}
+p {
+    text-align: center;
+    font-size: 0.9em;
+    color : papayawhip;
+    margin: 0.5em
+}

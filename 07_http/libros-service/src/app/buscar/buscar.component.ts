@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BooksService } from '../servicios/books.service';
+import { BooksService } from '../servicios/booksRx.service';
 
 const URL = 'https://www.googleapis.com/books/v1/volumes?q=intitle:';
 
@@ -23,14 +23,12 @@ export class BuscarComponent implements OnInit {
   btnBuscar() {
     this.aResultados = [];
 
-    this.bookService.getBooks(this.claveBusqueda);
-    // .subscribe(
-    //  books => this.aResultados = books,
-    //  error => console.error(error)
-    // ); // Fin del suscribe
+    this.bookService.getBooks(this.claveBusqueda)
+     .subscribe(
+      books => this.aResultados = books,
+      error => console.error(error)
+     ); // Fin del suscribe
   } // Fin de la función btnBuscar
 
 }
-
-// response => {
 

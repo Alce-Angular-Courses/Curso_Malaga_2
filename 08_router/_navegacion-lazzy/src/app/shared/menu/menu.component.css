@@ -1,0 +1,24 @@
+nav {
+    border-radius: 5px;
+    background-color: rgba(246,20,25,0.7);
+    overflow: auto;
+    height: 2em;
+    padding-top: 0.7em;
+}
+
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav li{ /* class="grid_1 suffix_1" */
+        display: inline-block;
+        width: 15%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color:initial;
+    }

@@ -21,7 +21,6 @@ export class BooksService {
            aResultados.push(bookTitle);
          }
          console.log(aResultados);
-         return response;
        }
     );
   }
