@@ -1,0 +1,10 @@
+<h1>Memory Books</h1>
+
+<input type="text" [(ngModel)]='inputTitle' >
+<!-- Ejemplo del doble binding para limpiar el contenido del input -->
+<button (click)="searchTitle()">Buscar</button>
+
+<ul>
+    <li *ngFor="let book of aBooks">{{book}}</li>
+</ul>
+

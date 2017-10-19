@@ -1,0 +1,10 @@
+.container {
+    background-color: papayawhip;
+    margin: 1em auto;
+    padding: 1em 2em;
+    width: 60%;
+}
+
+label, input {
+    margin-right: 1em;
+}

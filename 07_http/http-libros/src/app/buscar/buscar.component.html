@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Buscar libros</h2>
+  <p>
+    <input type="text" 
+      placeholder="clave de busqueda"
+      [(ngModel)] = "claveBusqueda">
+  </p>
+  <p>
+    <button (click)="btnBuscar()">Buscar</button>
+  </p>
+  <div *ngIf="aResultados.length; then buscarOk else buscarError"></div>
+
+  <ng-template #buscarOk>
+      <h2>Resultados de la busqueda</h2>
+      <ul>
+        <li *ngFor="let resultado of aResultados">{{resultado}}</li>
+      </ul>
+  </ng-template>
+
+  <ng-template #buscarError>
+    <p>Ningún libro coincide con tu búsqueda</p>
+  </ng-template> 
+</div>
+
+
